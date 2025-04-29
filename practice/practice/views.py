@@ -2,7 +2,17 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 def homePage(request):
-    return render(request, "index.html")
+    data={
+        'title': 'Home',
+        'bdata': 'Welcome to Home Page | Dynamic Data',
+        'clist': ['PHP', 'Java', 'Python'],
+        'numbers': [],
+        'student_details': [
+            {'name': 'yash', 'phone': 123456789},
+            {'name': 'john', 'phone': 896764464},
+        ]
+    }
+    return render(request, "index.html", data)
 
 def aboutUs(request):
     return HttpResponse("<h1>Welcome to About Page</h1>")
