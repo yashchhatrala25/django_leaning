@@ -22,6 +22,11 @@ urlpatterns = [
     path('admin-panel/', admin.site.urls),
     path('', views.homePage),
     path('about-us/', views.aboutUs),
-    path('course/', views.course),
-    path('course/<courseid>', views.courseDetails),
+    path('service/', views.service),    
+    path('pages/team/', views.ourDoctors),
+    path('pages/faeature/', views.faeature),
+    path('pages/appointment/', views.appointment),
+    path('pages/testimonial/', views.testimonial),
+    path('pages/404/', views.pageNotFound),
+    path('contact/', views.contactUs),
 ]

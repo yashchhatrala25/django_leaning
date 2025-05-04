@@ -17,8 +17,23 @@ def homePage(request):
 def aboutUs(request):
     return render(request, 'about.html')
 
-def course(request):
-    return HttpResponse("<h1>Welcome to Course Page</h1>")
+def service(request):
+    return render(request, 'service.html')
 
-def courseDetails(request, courseid):
-    return HttpResponse(courseid)
+def faeature(request):
+    return render(request, 'feature.html')
+
+def ourDoctors(request):
+    return render(request, 'team.html')
+
+def appointment(request):
+    return render(request, 'appointment.html')
+
+def testimonial(request):
+    return render(request, 'testimonial.html')
+
+def pageNotFound(request):
+    return render(request, '404.html')
+
+def contactUs(request):
+    return render(request, 'contact.html')
