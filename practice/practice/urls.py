@@ -20,13 +20,13 @@ from practice import views
 
 urlpatterns = [
     path('admin-panel/', admin.site.urls),
-    path('', views.homePage),
-    path('about-us/', views.aboutUs),
-    path('service/', views.service),    
-    path('pages/team/', views.ourDoctors),
-    path('pages/faeature/', views.faeature),
-    path('pages/appointment/', views.appointment),
-    path('pages/testimonial/', views.testimonial),
-    path('pages/404/', views.pageNotFound),
-    path('contact/', views.contactUs),
+    path('', views.homePage, name='home'),
+    path('about-us/', views.aboutUs, name='about-us'),
+    path('service/', views.service, name='service'),    
+    path('pages/faeature/', views.faeature, name='pages/faeature'),
+    path('pages/team/', views.ourDoctors, name='pages/team'),
+    path('pages/appointment/', views.appointment, name='pages/appointment'),
+    path('pages/testimonial/', views.testimonial, name='pages/testimonial'),
+    path('pages/404/', views.pageNotFound, name='pages/404'),
+    path('contact/', views.contactUs, name='contact'),
 ]

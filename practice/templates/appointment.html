@@ -1,5 +1,7 @@
-{% include "header.html" %}
+{% extends "base.html" %}
 {% load static %}
+
+{% block content %}
     <!-- Appointment Start -->
     <div class="container-xxl py-5">
         <div class="container">
@@ -76,4 +78,4 @@
         </div>
     </div>
     <!-- Appointment End -->
-{% include "footer.html" %}
+{% endblock %}

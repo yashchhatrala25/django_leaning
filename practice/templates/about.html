@@ -1,5 +1,7 @@
-{% include "header.html" %}
+{% extends "base.html" %}
 {% load static %}
+
+{% block content %}
 
     <!-- About Start -->
     <div class="container-xxl py-5">
@@ -171,4 +173,4 @@
         </div>
     </div>
     <!-- Team End -->
-{% include "footer.html" %}
+{% endblock %}

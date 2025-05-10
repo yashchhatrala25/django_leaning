@@ -1,5 +1,7 @@
-{% include "header.html" %}
+{% extends "base.html" %}
 {% load static %}
+
+{% block content %}
     <!-- Testimonial Start -->
     <div class="container-xxl py-5">
         <div class="container">
@@ -36,4 +38,4 @@
         </div>
     </div>
     <!-- Testimonial End -->
-{% include "footer.html" %}
+{% endblock %}

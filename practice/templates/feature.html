@@ -1,5 +1,7 @@
-{% include "header.html" %}
+{% extends "base.html" %}
 {% load static %}
+
+{% block content %}
     <!-- Feature Start -->
     <div class="container-fluid bg-primary overflow-hidden px-lg-0" style="margin: 6rem 0;">
         <div class="container feature px-lg-0">
@@ -66,4 +68,4 @@
         </div>
     </div>
     <!-- Feature End -->
-{% include "footer.html" %}
+{% endblock %}
